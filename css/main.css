@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+   /* Стили для TOP Header */
+   .top-header {
+    height: 61px;
+    background: #020270;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Стили для секций */
+.top-header-section {
+    color: #fff;
+    margin-right: 20px;
+}
+
+/* Стили для социальных сетей */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .top-header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .top-header-section {
+        margin: 10px 0;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+  
+ /* Стили для Main Header */
+ .main-header {
+    height: 100px;
+    background: #ffffff;
+}
+
+/* Стили для логотипа */
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для navbar */
+.navbar {
+    background: transparent;
+    border: none;
+}
+
+/* Стили для ссылок в navbar */
+.navbar-nav .nav-link {
+    color: #000;
+    margin: 0 10px;
+    font-weight: bold;
+
+}
+
+/* Стили для бургер-меню на мобильных устройствах */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        color: #000;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+
+/* Стили для отступа в десктопной версии */
+@media (min-width: 992px) {
+    .ml-desktop {
+        margin-left: 180px !important;
+    }
+}
+
+.main-block {
+    background: linear-gradient(270deg, #D6E9F0 0.1%, #C2D3DB 99.83%);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+
+    /* Стили для контейнера с карточками */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+        justify-content: space-between;
+    }
+
+    /* Стили для карточки */
+    .card {
+        width: 330px;
+        margin-bottom: 50px;
+        height: 260px;
+        background-color: #FFFFFF; /* Фоновый цвет карточки */
+        border-radius: 0px 50px; /* Закругление углов */
+        overflow: hidden; /* Для скрытия изображения, если оно больше карточки */
+        position: relative; /* Для позиционирования иконки и полоски */
+    }
+
+    /* Стили для изображения в карточке */
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Стили для текста в карточке */
+    .card-text {
+        padding: 10px;
+    }
+
+    /* Стили для заголовка */
+    .card-title {
+        color: #000;
+        font-family: IBM Plex Serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        margin-left: 20px;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    /* Стили для описания */
+    .card-description {
+        color: #000;
+        font-family: IBM Plex Serif;
+        font-size: 14px;
+        font-style: normal;
+        margin-left: 20px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .about_us {
+        margin-top: 100px;
+        background: rgba(0, 159, 205, 0.05);
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+    
+
+    /* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Карточки будут занимать всю ширину экрана */
+    }
+}
+
+
+/* Стили для иконки */
+.card-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 55px; /* Ширина иконки */
+    margin-top: 10px;
+    height: 52px; /* Высота иконки */
+    margin-left: 20px;
+    background-size: cover; /* Размер изображения */
+}
+
+/* Стили для полоски */
+.card-line {
+    position: absolute;
+    top: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    left: 90px; /* Расстояние между иконкой и полоской */
+    width: 168px; /* Ширина полоски */
+    height: 2px; /* Высота полоски */
+    background-color: #000; /* Цвет полоски */
+}
+
+
+ /* Стили для контейнера */
+ .image-text-container {
+    width: 1290px; /* Ширина контейнера */
+    height: 414px; /* Высота контейнера */
+    background-color: #81B08F; /* Цвет фона */
+    border-radius: 20px; /* Закругление углов */
+    display: flex;
+    margin-top: 130px;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Стили для текста слева */
+.text {
+    flex: 1;
+    text-align: center; /* Выравнивание текста по центру */
+    color: black; /* Цвет текста */
+    font-size: 15px;
+}
+
+/* Стили для изображения справа */
+.image {
+    width: 771px; /* Ширина изображения */
+    height: 414px; /* Высота изображения */
+}
+
+/* Медиазапрос для мобильных устройств с шириной экрана менее 768px */
+@media (max-width: 768px) {
+    .image-text-container {
+        width: auto; /* Автоширина на мобильных устройствах */
+        height: auto; /* Автовысота на мобильных устройствах */
+        flex-direction: column; /* Столбцом на мобильных устройствах */
+        align-items: center; /* Выравнивание по центру на мобильных устройствах */
+        padding: 10px;
+    }
+
+    .text {
+        width: 100%; /* Полная ширина текста на мобильных устройствах */
+        text-align: center; /* Выравнивание текста по центру на мобильных устройствах */
+    }
+
+    .image {
+        width: 100%; /* Полная ширина изображения на мобильных устройствах */
+        height: auto; /* Автоматическая высота, чтобы соответствовать ширине */
+    }
+}
+
+.news {
+    margin-top: 185px;
+}
+
+
+.block-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Позволяет блокам переноситься на новую строку на мобильных устройствах */
+  }
+  
+  .block {
+    width: calc(50% - 10px); /* Устанавливаем ширину блока с учетом отступов и делаем их рядом друг с другом */
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, rgba(156, 236, 251, 0.50) 0%, rgba(101, 199, 247, 0.50) 50%, rgba(0, 82, 212, 0.50) 100%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .content h2 {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; 
+  }
+  
+  .content p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 23.4px */
+    margin-bottom: 10px;
+  }
+  
+  .content button {
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 130px;
+    font-weight: 600;
+    line-height: normal;
+    width: 184px;
+    height: 47px;
+    background: #DB0011;
+  }
+  
+  .image_banner {
+    width: 310px;
+    height: 310px;
+    background-size: cover;
+    background-position: right;
+    margin-left: auto;
+    border-radius: 0 10px 10px 0; /* Скругление справа */
+    /* Задайте изображение в качестве фона здесь с помощью background-image */
+  }
+  
+  /* Медиа-запрос для мобильных устройств */
+  @media (max-width: 768px) {
+    .block {
+      width: 100%; /* Блоки на мобильных устройствах занимают всю доступную ширину */
+      flex-direction: column; /* Столбцовая компоновка для блоков на мобильных устройствах */
+    }
+
+    .content button {
+        margin-top: 30px;
+    }
+  
+    .image_banner {
+      width: 100%;
+      text-align: center;
+      height: auto; /* Автоматический размер изображения на мобильных устройствах */
+      border-radius: 10px 10px 0 0; /* Скругление только у верхних углов изображения */
+    }
+  }
+
+  .footer {
+	margin-top: 140px;
+	background: #0052D4;
+	color: #fff;
+	padding: 60px 0 35px 0;
+}
+
+.footer a {
+	color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+	text-decoration: underline;
+}
+
+.footer-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ed8088
+}
+
+.footer-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 10px
+}
+
+.list-title {
+	font-size: 24px;
+	font-weight: 600;
+    text-decoration: none;
+	padding-bottom: 20px
+}
+
+.list-item {
+    list-style-type: none;
+	font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-mid {
+	padding: 35px 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: end;
+	border-bottom: 1px solid #ed8088
+}
+
+.footer__content {
+	-ms-flex-preferred-size: 550px;
+	flex-basis: 550px
+}
+
+.footer__social img {
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s
+}
+
+.footer__social img:hover {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px)
+}
+
+.services {
+	margin-top: 140px
+}
+
+.footer-bottom {
+	padding-top: 35px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.contact {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 10px
+}
+
+.copy::before {
+	content: "";
+	background: url(../images/Copyright.svg) left no-repeat;
+	padding-right: 30px
+}
+
+@media(max-width: 990px) {
+	.footer-top {
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		gap: 50px
+	}
+
+	.services {
+		margin-top: 50px
+	}
+}
